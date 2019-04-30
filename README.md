@@ -8,9 +8,9 @@
  
  Examples
 
-  - PathMatcher.instance("/foo/**") represents paths like /foo or /foo/bar/one
-  - PathMatcher.instance("/foo/*.xml") represents paths like /foo/a.xml or /foo/bar.xml
-  - PathMatcher.instance("/foo/?.xml") represents paths like /foo/a.xml or /foo/b.xml
+  - '/foo/**' represents paths like /foo or /foo/bar/one
+  - '/foo/*.xml' represents paths like /foo/a.xml or /foo/bar.xml
+  - '/foo/?.xml' represents paths like /foo/a.xml or /foo/b.xml
 
  It is helper implementation for implementing http servlet filters and similar implementations.
 
