@@ -103,4 +103,15 @@ public class PathMatherTest {
         Assert.assertFalse("1.5", matcher.match("/jablko/toto/tamto/a.json"));
         Assert.assertFalse("1.6", matcher.match("/moje/delo"));
     }
+    
+    @Test
+	public void multiMatch4() throws Exception {
+        PathMatcher matcher = PathMatcher.instance("/**");
+        Assert.assertTrue("1.1", matcher.match("/a.xml"));
+        Assert.assertTrue("1.2", matcher.match("/jablko/a.xml"));
+        Assert.assertTrue("1.3", matcher.match("/jablko/toto/a.xml"));
+        Assert.assertTrue("1.4", matcher.match("/jablko/toto/tamto/a.xml"));
+        Assert.assertTrue("1.5", matcher.match("/jablko/toto/tamto/a.json"));
+        Assert.assertTrue("1.6", matcher.match("/moje/delo"));
+    }
 }

@@ -120,7 +120,7 @@ public class PathMatcher {
         if(matcherIndex >= matcherSize) return false;
         ElementMatcher matcher = matchers[matcherIndex];
         if(matcher.isWild()) {
-            for(int i = partSize-1; i >= 0; i--) {
+            for(int i = partSize-partIndex; i >= 0; i--) {
                 boolean result = matchImpl(chars, parts, partSize, partIndex+i, matcherIndex+1);
                 if(result) return true;
             }
@@ -133,5 +133,12 @@ public class PathMatcher {
             }
         }
     }
+
+    @Override
+    public String toString() {
+        return "PathMatcher{" + "pattern=" + pattern + ", maxSize=" + maxSize + '}';
+    }
+
+    
         
 }
