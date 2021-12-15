@@ -26,8 +26,8 @@
 
 ```
    <dependency>
-      <groupId>com.github.antonsjava</groupId>
+      <groupId>io.github.antonsjava</groupId>
       <artifactId>web-path-matcher</artifactId>
-      <version>1.0</version>
+      <version>LASTEVERSION</version>
    </dependency>
 ```
